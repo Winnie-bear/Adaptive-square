@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #placeholder{
+            overflow: hidden;
+            width:100%;
+            background-color: coral;
+        }
+        #placeholder:after {
+            content: '';
+            display: block;
+            margin-top: 100%; /* margin 百分比相对父元素宽度计算 */
+        }
+
+    </style>
+</head>
+<body>
+<div id="placeholder"></div>
+</body>
+</html>
